@@ -1,0 +1,20 @@
+# AutoTabber — Python 3.11
+# Core audio / DSP
+librosa>=0.10.1
+soundfile>=0.12.1          # librosa backend for WAV loading
+numpy>=1.24.0
+scipy>=1.11.0              # librosa dependency
+
+# Non-WAV format conversion (requires ffmpeg binary — see README)
+pydub>=0.25.1
+
+# Neural polyphonic pitch detection
+basic-pitch>=0.3.0
+pretty-midi>=0.2.9         # basic-pitch dependency for MIDI output
+onnxruntime>=1.16.0        # basic-pitch ONNX backend (avoids TF 2.16 compat issues)
+
+# UI
+streamlit>=1.32.0
+
+# Testing
+pytest>=7.4.0
